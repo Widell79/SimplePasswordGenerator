@@ -31,7 +31,7 @@ class PasswordGenerator(Frame):
         frame1 = Frame(self)
         frame1.pack(fill=X)
 
-        lbl1 = Label(frame1, text='Input password lenght: (6-15)', width=23)
+        lbl1 = Label(frame1, text='Input password lenght: (6-15)', width=27)
         lbl1.pack(side=LEFT, padx=5, pady=10)
 
         self.entry1 = Entry(frame1, width=10)
@@ -40,7 +40,7 @@ class PasswordGenerator(Frame):
         frame2 = Frame(self)
         frame2.pack(fill=X)
 
-        lbl2 = Label(frame2, text='Generated password:', width=16)
+        lbl2 = Label(frame2, text='Generated password:', width=20)
         lbl2.pack(side=LEFT, padx=5, pady=5)
 
         self.entry2 = Entry(frame2, width=17)
@@ -72,7 +72,7 @@ class PasswordGenerator(Frame):
 
 def main():
     app_window = Tk()
-    app_window.geometry("300x100+300+300")
+    app_window.geometry("335x110+300+300")
     app = PasswordGenerator()
     app_window.mainloop()
 
